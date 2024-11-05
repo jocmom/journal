@@ -1,3 +1,7 @@
+mod cli;
+use structopt::StructOpt;
+
 fn main() {
-    println!("Hello, world!");
+    println!("Rusty CLI");
+    cli::CommandLineArgs::from_args();
 }
